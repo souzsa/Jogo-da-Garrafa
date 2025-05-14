@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo das Garrafas Coloridas</title>
+    <title> Jogo da Garrafas- Início</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,15 +17,13 @@
             </select>
             <button id="iniciar">Iniciar Jogo</button>
         </div>
-        
-        <div class="game-area">
-            <p id="dica">Escolha um nível e clique em "Iniciar"!</p>
-            <div id="garrafas-container"></div>
-            <p id="tentativas">Tentativas restantes: -</p>
-            <p id="pontuacao">Pontuação: 0</p>
-            <p id="tempo">Tempo: 0.00s | Recorde: --</p>
-        </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('iniciar').addEventListener('click', function() {
+            const nivel = document.getElementById('nivel').value;
+            localStorage.setItem('nivelJogo', nivel);
+            window.location.href = 'jogo.html';
+        });
+    </script>
 </body>
 </html>
