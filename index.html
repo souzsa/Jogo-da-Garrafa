@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Garrafas Coloridas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Garrafas Coloridas</h1>
+        <div class="game-controls">
+            <select id="nivel">
+                <option value="1">Fácil (5 tentativas)</option>
+                <option value="2">Médio (3 tentativas)</option>
+                <option value="3">Difícil (1 tentativa)</option>
+            </select>
+            <button id="iniciar">Iniciar Jogo</button>
+        </div>
+        
+        <div class="game-area">
+            <p id="dica">Escolha um nível e clique em "Iniciar"!</p>
+            <div id="garrafas-container"></div>
+            <p id="tentativas">Tentativas restantes: -</p>
+            <p id="pontuacao">Pontuação: 0</p>
+            <p id="tempo">Tempo: 0.00s | Recorde: --</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
